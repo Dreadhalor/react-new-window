@@ -13,7 +13,7 @@ declare module 'react-new-window' {
   export interface IWindowFeatures {
     height?: number
     width?: number
-    [i: string]: boolean | number | string
+    [i: string]: boolean | number | string | undefined
   }
 
   /**
@@ -71,7 +71,7 @@ declare module 'react-new-window' {
      * If specified, copy styles from parent window's document.
      */
     copyStyles?: boolean
-    
+
     /**
      * If specified, close the new window on unmount.
      */
